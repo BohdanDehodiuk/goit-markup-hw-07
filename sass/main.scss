@@ -1,0 +1,11 @@
+// utils
+@import "./utils/variables";
+@import "./utils/modern-normalize";
+@import "./utils/general_style";
+
+// Стилизация хедера
+@import "./components/header";
+@import "./components/header-conteiner";
+@import "./components/nav";
+@import "./components/logo";
+@import "./components/auth";
