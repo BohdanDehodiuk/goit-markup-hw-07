@@ -58,56 +58,56 @@
     <main class="main-index">
         <!-- Герои -->
         <section class="hero">
-            <h1 class="hero-title">Эффективные решения <br>для вашего бизнеса</h1>
-            <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
-            <div class="backdrop is-hidden" data-modal>
-                <div class="modal">
-                    <button class="modal-close" data-modal-close>
-                        <svg class="close-btn">
+            <h1 class="hero__title">Эффективные решения <br>для вашего бизнеса</h1>
+            <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
+            <div class="backdrop backdrop--is-hidden" data-modal>
+                <div class="modal modal--is-hidden">
+                    <button class="modal__btn" data-modal-close>
+                        <svg class="modal__icon">
                             <use href="./images/symbol-defs.svg#close-btn"></use>
                         </svg>
                     </button>
 
                     <div class="form">
-                        <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+                        <p class="form__text">Оставьте свои данные, мы вам перезвоним</p>
                         <form class="form-description">                        
-                            <div class="form-field">
-                                <label class="form-lable" for="name">Имя</label>
-                                <input class="form-input" type="text" name="name" id="name">
-                                <svg class="form-svg">
+                            <div class="field">
+                                <label class="field__lable" for="name">Имя</label>
+                                <input class="field__input" type="text" name="name" id="name">
+                                <svg class="field__svg">
                                     <use href="./images/symbol-defs.svg#person-ikon"></use>
                                 </svg>
                             </div>                           
 
-                            <div class="form-field">
-                                <label class="form-lable" for="tel">Телефон</label>
-                                <input class="form-input" type="tel" name="tel" id="tel">
-                                <svg class="form-svg">
+                            <div class="field">
+                                <label class="field__lable" for="tel">Телефон</label>
+                                <input class="field__input" type="tel" name="tel" id="tel">
+                                <svg class="field__svg">
                                     <use href="./images/symbol-defs.svg#phone-ikon"></use>
                                 </svg>
                             </div>                            
 
-                            <div class="form-field">
-                                <label class="form-lable" for="mail">Почта</label>
-                                <input class="form-input" type="email" name="mail" id="mail">
-                                <svg class="form-svg">
+                            <div class="field">
+                                <label class="field__lable" for="mail">Почта</label>
+                                <input class="field__input" type="email" name="mail" id="mail">
+                                <svg class="field__svg">
                                     <use href="./images/symbol-defs.svg#amail-ikon"></use>
                                 </svg>
                             </div>
 
-                            <div class="form-comments">
-                                <label class="form-lable" for="coment">Коментарии
-                                    <textarea class="form-textarea" name="coment" id="coment" cols="30" rows="10"
+                            <div class="comments">
+                                <label class="comments__lable" for="coment">Коментарии
+                                    <textarea class="comments__textarea" name="coment" id="coment" cols="30" rows="10"
                                         placeholder="Введите текст"></textarea>
                                 </label>
                             </div>        
 
-                            <div class="form-checkbox">
-                                <label class="checkbox-lable" for="checkbox">
-                                    <input class="checkbox-input" type="checkbox" name="checkbox" id="checkbox">
-                                    <span class="checkbox-icon"></span>
+                            <div class="checkbox">
+                                <label class="checkbox__lable" for="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="checkbox" id="checkbox">
+                                    <span class="checkbox__icon"></span>
                                     Соглашаюсь с рассылкой и принимаю
-                                    <a class="form-link" href="">Условия договора</a>
+                                    <a class="checkbox__link" href="">Условия договора</a>
                                 </label>
                             </div>
                             
