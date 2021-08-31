@@ -1,0 +1,34 @@
+.sitebar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.sitebar__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $main-partners-color;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  margin-right: 10px;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sitebar__link:last-child {
+  margin-right: 0px;
+}
+.sitebar__pic {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+.sitebar__link:hover,
+.sitebar__link:focus {
+  color: $sitebar-title-color;
+  background-color: $accent-link-color;
+}

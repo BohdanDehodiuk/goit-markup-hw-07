@@ -57,15 +57,30 @@
     <!-- Портфолио -->
     <main class="main-portfolio">
         <section class="portfolio-section">
-            <div class="conteiner work">
-                <h1 class="portfolio-title">Портфолио</h1>
+            <div class="conteiner">
+                <h1 class="portfolio-section__title">Портфолио</h1>
                 <!-- Фільтр -->
-                <ul class="filter-list">
-                    <li class="filter-item"><button class="filter-btn current" type="button">Все</button></li>
-                    <li class="filter-item"><button class="filter-btn" type="button">Веб-сайты</button></li>
-                    <li class="filter-item"><button class="filter-btn" type="button">Приложения</button></li>
-                    <li class="filter-item"><button class="filter-btn" type="button">Дизайн</button></li>
-                    <li class="filter-item"><button class="filter-btn" type="button">Маркетинг</button></li>
+                <ul class="filter">
+                    <li class="filter__item">
+                        <button class="filter__btn filter__btn--current" type="button">Все                            
+                        </button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter__btn" type="button">Веб-сайты                            
+                        </button>
+                        </li>
+                    <li class="filter__item">
+                        <button class="filter__btn" type="button">Приложения                            
+                        </button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter__btn" type="button">Дизайн                            
+                        </button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter__btn" type="button">Маркетинг                            
+                        </button>
+                    </li>
                 </ul>
                 <!-- Портфолио-лист -->
                 <ul class="portfolio-list">
@@ -238,46 +253,53 @@
     </main>
     <!-- Подвал -->
     <footer class="footer">
-        <div class="conteiner footer-sitebar">
+        <div class="conteiner conteiner--footer">
             <div class="footer-description">
-                <a class="footer-logo" href="index.html">Web<span class="footer-studio">Studio</span></a>
+                <a class="footer-description__logo" href="index.html">Web
+                    <span class="footer-description__studio">Studio
+                    </span>
+                </a>
                 <address class="address">
-                    <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
-                    <ul class="address-list">
-                        <li class="address-item"><a class="address-link"
-                                href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+                    <ul class="address__list">
+                        <li class="address__item">
+                            <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com
+                            </a>
                         </li>
-                        <li class="address-item"><a class="address-link" href="tel:+380961111111">+380961111111</a></li>
+                        <li class="address__item">
+                            <a class="address__link" href="tel:+380961111111">+380961111111
+                            </a>
+                        </li>
                     </ul>
                 </address>
             </div>
-            <div class="sitebar-description">
-                <strong class="sitebar-title">присоединяйтесь</strong>
-                <ul class="footer-sitebar">
-                    <li class="sitebar-list">
-                        <a class="sitebar-link" href="">
-                            <svg class="sitebar-svg">
+            <div class="sitebar-footer">
+                <strong class="sitebar-footer__title">присоединяйтесь</strong>
+                <ul class="sitebar-footer__list">
+                    <li class="sitebar-footer__item">
+                        <a class="sitebar-footer__link" href="">
+                            <svg class="sitebar-footer__pic">
                                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="sitebar-list">
-                        <a class="sitebar-link" href="">
-                            <svg class="sitebar-svg">
+                    <li class="sitebar-footer__item">
+                        <a class="sitebar-footer__link" href="">
+                            <svg class="sitebar-footer__pic">
                                 <use href="./images/symbol-defs.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="sitebar-list">
-                        <a class="sitebar-link" href="">
-                            <svg class="sitebar-svg">
+                    <li class="sitebar-footer__item">
+                        <a class="sitebar-footer__link" href="">
+                            <svg class="sitebar-footer__pic">
                                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="sitebar-list">
-                        <a class="sitebar-link" href="">
-                            <svg class="sitebar-svg">
+                    <li class="sitebar-footer__item">
+                        <a class="sitebar-footer__link" href="">
+                            <svg class="sitebar-footer__pic">
                                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -285,15 +307,15 @@
                 </ul>
     
             </div>
-            <div class="mail-post">
-                <strong class="sitebar-title">Подпишитесь на рассылку</strong>
-                <div class="mail-description">
-                    <form class="mail-form">
-                        <label class="mail-text"></label>
-                        <input type="email" class="mail-input" placeholder="Email">
+            <div class="mail">
+                <strong class="mail__title">Подпишитесь на рассылку</strong>
+                <div class="form-footer">
+                    <form class="form-footer__form">
+                        <label class="form-footer__text" for="post"></label>
+                        <input class="form-footer__input" type="email" name="post" id="post" placeholder="Email">
                     </form>
-                    <button class="mail-btn" type="submit">Подписаться
-                        <svg class="button-svg">
+                    <button class="btn-footer" type="submit">Подписаться
+                        <svg class="btn-footer__pic">
                             <use href="./images/symbol-defs.svg#icon-send"></use>
                         </svg>
                     </button>
