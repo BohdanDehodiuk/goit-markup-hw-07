@@ -9,9 +9,10 @@
 }
 .auth__item {
   margin-right: 50px;
-}
-.auth__item:last-child {
-  margin-right: 0px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .auth__link {
@@ -28,11 +29,12 @@
   transition-property: color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.auth__link:hover,
-.auth__link:focus {
-  color: $accent-link-color;
-  fill: $accent-link-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-link-color;
+    fill: $accent-link-color;
+  }
 }
 .auth__ikon {
   width: 16px;

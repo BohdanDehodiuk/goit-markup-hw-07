@@ -7,10 +7,11 @@
 }
 .nav__item {
   margin-right: 50px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
-.nav__item:last-child {
-  margin-right: 0px;
-}
+
 .nav__link {
   position: relative;
 
@@ -27,36 +28,41 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.nav__link::after {
-  content: "";
-  display: block;
-  padding: 0px;
-  margin: 0px;
 
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  left: 0px;
-  bottom: -2px;
+  &::after {
+    content: "";
+    display: block;
+    padding: 0px;
+    margin: 0px;
 
-  background: $accent-link-color;
-  border-radius: 2px;
-  opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0px;
+    bottom: -2px;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background: $accent-link-color;
+    border-radius: 2px;
+    opacity: 0;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-link-color;
+  }
 }
-.nav__link:hover::after {
-  opacity: 1;
-}
-.nav__link--current::after {
-  opacity: 1;
-}
-.nav__link:hover,
-.nav__link:focus {
-  color: $accent-link-color;
-}
+
 .nav__link--current {
   color: $accent-link-color;
+
+  &::after {
+    opacity: 1;
+  }
 }

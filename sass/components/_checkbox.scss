@@ -1,5 +1,6 @@
 .checkbox {
   margin-bottom: 30px;
+  cursor: pointer;
 }
 .checkbox__lable {
   display: flex;
@@ -23,21 +24,23 @@
 
   border: 2px solid #212121;
   border-radius: 4px;
+  cursor: pointer;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.checkbox__icon:hover,
-.checkbox__icon:focus {
-  border: 2px solid $accent-link-color;
-}
-.checkbox__input:checked + .checkbox__icon {
-  border-color: transparent;
-  background-color: $accent-link-color;
-  background-image: url(..//images/icon-check.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50% 50%;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $accent-link-color;
+  }
+  .checkbox__input:checked + & {
+    border-color: transparent;
+    background-color: $accent-link-color;
+    background-image: url(..//images/icon-check.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+  }
 }
 .checkbox__link {
   padding-left: 5px;

@@ -23,8 +23,8 @@
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.comments__textarea:focus,
-.comments__textarea:hover {
-  border: 1px solid $accent-link-color;
+  &:focus,
+  &:hover {
+    border: 1px solid $accent-link-color;
+  }
 }

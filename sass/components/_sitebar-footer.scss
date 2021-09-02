@@ -15,10 +15,12 @@
 }
 .sitebar-footer__item {
   margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
 }
-.sitebar-footer__item:last-child {
-  margin-right: 0px;
-}
+
 .sitebar-footer__link {
   display: flex;
   justify-content: center;
@@ -33,11 +35,13 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-link-color;
+  }
 }
-.sitebar-footer__link:hover,
-.sitebar-footer__link:focus {
-  background-color: $accent-link-color;
-}
+
 .sitebar-footer__pic {
   width: 20px;
   height: 20px;

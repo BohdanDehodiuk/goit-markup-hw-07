@@ -18,17 +18,20 @@
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $sitebar-title-color;
+    background-color: $accent-link-color;
+  }
 }
-.sitebar__link:last-child {
-  margin-right: 0px;
-}
+
 .sitebar__pic {
   fill: currentColor;
   width: 20px;
   height: 20px;
-}
-.sitebar__link:hover,
-.sitebar__link:focus {
-  color: $sitebar-title-color;
-  background-color: $accent-link-color;
 }

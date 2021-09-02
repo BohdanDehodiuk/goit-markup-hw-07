@@ -13,10 +13,11 @@
 }
 .hobbi__item {
   margin-right: 30px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
-.hobbi__item:last-child {
-  margin-right: 0px;
-}
+
 .hobbi__block {
   position: relative;
 }

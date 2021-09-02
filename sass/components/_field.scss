@@ -25,6 +25,11 @@
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    border: 1px solid $accent-link-color;
+  }
 }
 
 .field__svg {
@@ -36,12 +41,9 @@
   fill: $primary-text-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.field__input:focus,
-.field__input:hover {
-  border: 1px solid $accent-link-color;
-}
-.field__input:focus + .field__svg,
-.field__input:hover + .field__svg {
-  fill: $accent-link-color;
+
+  .field__input:focus + &,
+  .field__input:hover + & {
+    fill: $accent-link-color;
+  }
 }
